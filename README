@@ -1,0 +1,17 @@
+Example web application for batch image resizing.
+
+It should be run on Linux/Apache.
+
+Uses jQueryUI for frontend, uploadify for multiple file upload and custom
+Nya_Image and Nya_File classes.
+
+Files are uploaded, stored in a directory created for current user,
+and then resized using a generated bash script which allows the application to
+display progress bar of image resizing and to resize a number of images 
+while avoiding hanging of script if all images would be resized by one request.
+
+Nya_Image uses GD library since the idea was that this application should
+work on most shared host machines which usually don't have ImageMagick.
+
+It's in beta stage which means it should only be run on a local machine,
+not as a web service :)
