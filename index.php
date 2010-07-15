@@ -1,7 +1,6 @@
 <?php
 session_start();
 $sid = session_id();
-chmod('uploads', 0755); 
 ?>
 <!DOCTYPE html>
 <html lang="en">

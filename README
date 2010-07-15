@@ -15,3 +15,8 @@ work on most shared host machines which usually don't have ImageMagick.
 
 It's in beta stage which means it should only be run on a local machine,
 not as a web service :)
+
+After download you have to 
+chmod 777 uploads
+chmod 777 uploadify.php
+for uploading to work
