@@ -32,3 +32,4 @@ git pull origin master
 chmod 777 uploads
 chmod 777 uploadify.php
 #for uploading to work
+
