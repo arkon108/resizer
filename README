@@ -14,9 +14,21 @@ Nya_Image uses GD library since the idea was that this application should
 work on most shared host machines which usually don't have ImageMagick.
 
 It's in beta stage which means it should only be run on a local machine,
-not as a web service :)
+not as a web service (yet) :)
 
-After download you have to 
+=========================
+
+#To download, install git 
+sudo apt-get install git-core
+
+#in your server root
+mkdir resizer 
+cd resizer
+git init
+git remote add origin git@github.com:sasatomislav/resizer.git
+git pull origin master
+
+#After pull you have to 
 chmod 777 uploads
 chmod 777 uploadify.php
-for uploading to work
+#for uploading to work
