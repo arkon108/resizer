@@ -41,7 +41,7 @@ if (!is_dir($dirToSave)) {
 $img->saveAs($dirToSave, null, true);
 unset($img);
 
-$cnt = fopen('count', 'w');
+$cnt = fopen($dir . '/count', 'w');
 $cntstr = (isset($args['c']) && !empty($args['c'])) ? $args['c'] : '1/1';
 fwrite($cnt, $cntstr);
 fclose($cnt);

@@ -37,7 +37,7 @@ foreach ($files as $c => $f) {
 fclose($bs);
 touch($dir . '/count');
 chmod($dir . '/count' , 0777);
-$countFile = fopen('count', 'w');
+$countFile = fopen($dir . '/count', 'w');
 $cntstr = '0/' . $cnt;
 fwrite($countFile, $cntstr);
 fclose($countFile);
