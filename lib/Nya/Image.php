@@ -496,10 +496,6 @@ class Nya_Image
         return $this->_aspectRatio;
     }
     
-    /**
-     * //TODO: kaj ovo radi?
-     * @param $newName
-     */
     public function name($newName = null)
     {
         if (null === $newName) {
@@ -514,24 +510,18 @@ class Nya_Image
         }
     }
     
-    /**
-     * //TODO: koji točno path vraća, mogu li promijeniti path?
-     */
     public function path()
     {
         return $this->_path;
     }
     
-    /**
-     * TODO: što ovo radi?
-     */
+   
     public function filePath()
     {
         return $this->_filePath;
     }
     
     /**
-     * TODO: što ako smo resajzajzali veličinu?
      * Returns image width in pixels
      */
     public function width()
@@ -540,7 +530,6 @@ class Nya_Image
     }
     
     /**
-     * TODO: što ako smo resajzajzali veličinu?
      * Returns image height in pixels
      */
     public function height()
@@ -585,8 +574,6 @@ class Nya_Image
             $fileName = $this->_originalName;
         }
         
-        //var_dump($fileName); die;
-        
         
         $source = $this->_path . DIRECTORY_SEPARATOR . $this->_name;
         
@@ -625,6 +612,9 @@ class Nya_Image
         return $this;
     }
     
+    /**
+     * Unset image instance of resized file
+     */
     public function destroy()
     {
         if (null !== $this->_image) {
@@ -632,43 +622,6 @@ class Nya_Image
         }
         
         return $this;
-    }
-    
-    /**
-     * @TODO implement file copying of image
-     * @param $path
-     * @param $name
-     */
-    public function copyTo($path = null, $name = null) 
-    {
-        throw new Exception('Not implemented');
-    }
-
-    /**
-     * @TODO implement file copying of image
-     * @param unknown_type $path
-     * @param unknown_type $name
-     */
-    public function moveTo($path = null, $name = null) 
-    {
-        throw new Exception('Not implemented');
-    }
-    
-    /**
-     * @TODO: get binary file for saving into DB
-     */
-    public function binary()
-    {
-        // get binary file for saving into DB
-        throw new Exception('Not implemented');
-    }
-    
-    /**
-     * @TODO: implement get base 64 encoded image 
-     */
-    public function base64()
-    { 
-        throw new Exception('Not implemented');
     }
     
     public function info()
