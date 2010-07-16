@@ -19,9 +19,12 @@ $sid = session_id();
 
     <div id="header">
         <h1>Resize yo' images</h1>
-        <p class="intro ui-widget-content ui-corner-all">
-        	This is a demo application for batch resizing of images. The source code is available at <a href="http://github.com/sasatomislav/resizer">http://github.com/sasatomislav/resizer</a>. 
+        <p class="ui-widget-content ui-corner-all">
+        	This is a demo application for batch resizing of images. 
+            The source code is available at 
+            <a href="http://github.com/sasatomislav/resizer">http://github.com/sasatomislav/resizer</a>. 
        	</p>
+        <p class="ui-widget-content ui-corner-all">Upload up to 5 images and get resized variations in a .zip file</p>
     </div>
 
     <div id="content">
@@ -33,7 +36,7 @@ $sid = session_id();
 	            <ul>
 	            	<li><a href="#resize">Resize to fixed dimensions</a></li>
 	            	<li><a href="#resizeProportional">Resize to maximum</a></li>
-	            	<li><a href="#cropResize">Resize and crop from center</a></li>
+	            	<li><a href="#cropResize">Resize & crop</a></li>
 	            </ul>
 	            <div id="resize">
 	            	<p>Define to which width and height the images will be resized.</p>
@@ -76,23 +79,12 @@ $sid = session_id();
             <div id="upload-wrapper">
 				<input id="uploadfiles" name="uploadfiles" type="file" />
 			</div>
-			<button id="resize-now" class="fe-button">Resize uploaded images</button>
+			<a href="#" id="download-zip" class="fe-button button-action">Download resized images</a>
+            <a href="#" id="refresh" class="fe-button button-action">Resize again!</a>
             </div>
         </div>
     </div>
 
-</div>
-<div id="resize-dialog">
-	<div class="waitforit">
-		<p>Your images are being resized, please wait...</p>
-		<hr class="ui-state-disabled" />
-		<div id="resize-progress"></div>
-	</div>
-	<div class="done">
-		<p class="done">Your images are ready for download!</p>
-		<hr class="ui-state-disabled" />
-		<a href="#" id="download-link">Click here to download</a>
-	</div>
 </div>
 <script type="text/javascript">
 	var dirname = '<?php echo md5($sid) ?>';

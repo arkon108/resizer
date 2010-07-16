@@ -1,55 +1,42 @@
 <?php
-/*
-Uploadify v2.1.0
-Release Date: August 24, 2009
 
-Copyright (c) 2009 Ronnie Garcia, Travis Nickels
+/**
+ * Uploadify server side script
+ * Upload file and resize it
+ */
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+include_once 'lib/Nya/Image.php';
 
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-*/
-
-$bs = fopen('log', 'a+');
-
+//$bs = fopen('log', 'a+');
+//fwrite($bs, print_r($_POST, true));
+$variationDir = $_POST['resizeType'] . '_' . $_POST['width'] . 'x' . $_POST['height'];
+//fwrite($bs, 'variation dir:' . $variationDir . "\n");
 if (!empty($_FILES)) {
 	$tempFile = $_FILES['Filedata']['tmp_name'];
-	$targetPath = $_SERVER['DOCUMENT_ROOT'] . $_REQUEST['folder'] . '/';
+	$targetPath = str_replace('//','/',$_SERVER['DOCUMENT_ROOT'] . $_REQUEST['folder'] . '/');
+	$variationPath = str_replace('//','/', $targetPath . '/' . $variationDir);
 	$targetFile =  str_replace('//','/',$targetPath) . $_FILES['Filedata']['name'];
-//	fwrite($bs, $_REQUEST['folder'] . "\n");
-	// $fileTypes  = str_replace('*.','',$_REQUEST['fileext']);
-	// $fileTypes  = str_replace(';','|',$fileTypes);
-	// $typesArray = split('\|',$fileTypes);
-	// $fileParts  = pathinfo($_FILES['Filedata']['name']);
-	
-	// if (in_array($fileParts['extension'],$typesArray)) {
+//    fwrite($bs, 'variation path:' . $variationPath . "\n");
 		
 		if (!is_dir($targetPath)) {
-//			fwrite($bs, 'No dir, creating' . "\n");
-			// Uncomment the following line if you want to make the directory if it doesn't exist
-			mkdir(str_replace('//','/',$targetPath), 0777, true);
+//			fwrite($bs, 'No dir, creating ' . $targetPath . "\n");
+			mkdir($targetPath, 0777, true);
 		}
-//		move_uploaded_file($tempFile,$targetFile);
-		$result = move_uploaded_file($tempFile,$targetFile);
-		fwrite($bs, $result . ": " . $targetFile . "\n");	
+        if (!is_dir($variationPath)) {
+//          fwrite($bs, 'No dir, creating ' . $variationPath . "\n");
+            mkdir($variationPath, 0777, true);
+        }
+		move_uploaded_file($tempFile, $targetFile);
+		
+		$image = new Nya_Image($targetFile);
+		$width = ($_POST['width']) ? $_POST['width'] : null;
+		$height = $_POST['height'] ? $_POST['height'] : null;
+//		fwrite($bs, 'method ' . $_POST['resizeType'] . ' width: ' . $width . ' height: ' . $height . "\n");
+		$image->$_POST['resizeType']($width, $height);
+		$image->saveAs($variationPath, null, true);
+		unset($image);
+		
 		echo "1";
-	// } else {
-	// 	echo 'Invalid file type.';
-	// }
 }
-fclose($bs);
+//fclose($bs);
 ?>

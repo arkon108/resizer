@@ -1,0 +1,145 @@
+Array
+(
+    [Filename] => 1222103632_f4d11a80867b8e4b8893811b0ec4e783.JPG
+    [height] => 300
+    [dir] => uploads/20a46b5ba19c33c071924be737c13a3c
+    [fileext] => *.gif;*.jpg;*.jpeg;*.png;*.GIF;*.JPG;*.JPEG;*.PNG
+    [width] => 200
+    [resizeType] => resize
+    [folder] => /uploads/20a46b5ba19c33c071924be737c13a3c/
+    [Upload] => Submit Query
+)
+variation dir:resize_200x300
+variation path:/home/arkon108/www/resizer.web/uploads/20a46b5ba19c33c071924be737c13a3c/resize_200x300
+No dir, creating /home/arkon108/www/resizer.web/uploads/20a46b5ba19c33c071924be737c13a3c/
+No dir, creating /home/arkon108/www/resizer.web/uploads/20a46b5ba19c33c071924be737c13a3c/resize_200x300
+method resize width: 200 height: 300
+Array
+(
+    [Filename] => 1816240430_f0793618db_o.jpg
+    [height] => 300
+    [dir] => uploads/20a46b5ba19c33c071924be737c13a3c
+    [fileext] => *.gif;*.jpg;*.jpeg;*.png;*.GIF;*.JPG;*.JPEG;*.PNG
+    [width] => 200
+    [resizeType] => resize
+    [folder] => /uploads/20a46b5ba19c33c071924be737c13a3c/
+    [Upload] => Submit Query
+)
+variation dir:resize_200x300
+variation path:/home/arkon108/www/resizer.web/uploads/20a46b5ba19c33c071924be737c13a3c/resize_200x300
+method resize width: 200 height: 300
+Array
+(
+    [Filename] => 2434200018_2131dbc716_b.jpg
+    [height] => 300
+    [dir] => uploads/20a46b5ba19c33c071924be737c13a3c
+    [fileext] => *.gif;*.jpg;*.jpeg;*.png;*.GIF;*.JPG;*.JPEG;*.PNG
+    [width] => 200
+    [resizeType] => resize
+    [folder] => /uploads/20a46b5ba19c33c071924be737c13a3c/
+    [Upload] => Submit Query
+)
+variation dir:resize_200x300
+variation path:/home/arkon108/www/resizer.web/uploads/20a46b5ba19c33c071924be737c13a3c/resize_200x300
+method resize width: 200 height: 300
+Array
+(
+    [Filename] => 5310_12000_1.jpg
+    [height] => 100
+    [dir] => uploads/20a46b5ba19c33c071924be737c13a3c
+    [folder] => /uploads/20a46b5ba19c33c071924be737c13a3c/
+    [fileext] => *.gif;*.jpg;*.jpeg;*.png;*.GIF;*.JPG;*.JPEG;*.PNG
+    [width] => 300
+    [resizeType] => resize
+    [Upload] => Submit Query
+)
+variation dir:resize_300x100
+variation path:/home/arkon108/www/resizer.web/uploads/20a46b5ba19c33c071924be737c13a3c/resize_300x100
+No dir, creating /home/arkon108/www/resizer.web/uploads/20a46b5ba19c33c071924be737c13a3c/resize_300x100
+method resize width: 300 height: 100
+Array
+(
+    [Filename] => 050316-F-1234P-021.jpg
+    [height] => 100
+    [dir] => uploads/20a46b5ba19c33c071924be737c13a3c
+    [folder] => /uploads/20a46b5ba19c33c071924be737c13a3c/
+    [fileext] => *.gif;*.jpg;*.jpeg;*.png;*.GIF;*.JPG;*.JPEG;*.PNG
+    [width] => 300
+    [resizeType] => resize
+    [Upload] => Submit Query
+)
+variation dir:resize_300x100
+variation path:/home/arkon108/www/resizer.web/uploads/20a46b5ba19c33c071924be737c13a3c/resize_300x100
+method resize width: 300 height: 100
+Array
+(
+    [Filename] => 292600main_ISS018E009292_full.jpg
+    [height] => 100
+    [dir] => uploads/20a46b5ba19c33c071924be737c13a3c
+    [folder] => /uploads/20a46b5ba19c33c071924be737c13a3c/
+    [fileext] => *.gif;*.jpg;*.jpeg;*.png;*.GIF;*.JPG;*.JPEG;*.PNG
+    [width] => 300
+    [resizeType] => resize
+    [Upload] => Submit Query
+)
+variation dir:resize_300x100
+variation path:/home/arkon108/www/resizer.web/uploads/20a46b5ba19c33c071924be737c13a3c/resize_300x100
+method resize width: 300 height: 100
+Array
+(
+    [Filename] => 5310_12000_1.jpg
+    [height] => 99
+    [fileext] => *.gif;*.jpg;*.jpeg;*.png;*.GIF;*.JPG;*.JPEG;*.PNG
+    [resizeType] => cropResize
+    [width] => 133
+    [folder] => /uploads/20a46b5ba19c33c071924be737c13a3c/
+    [dir] => uploads/20a46b5ba19c33c071924be737c13a3c
+    [Upload] => Submit Query
+)
+variation dir:cropResize_133x99
+variation path:/home/arkon108/www/resizer.web/uploads/20a46b5ba19c33c071924be737c13a3c/cropResize_133x99
+No dir, creating /home/arkon108/www/resizer.web/uploads/20a46b5ba19c33c071924be737c13a3c/cropResize_133x99
+method cropResize width: 133 height: 99
+Array
+(
+    [Filename] => 050316-F-1234P-021.jpg
+    [height] => 99
+    [fileext] => *.gif;*.jpg;*.jpeg;*.png;*.GIF;*.JPG;*.JPEG;*.PNG
+    [resizeType] => cropResize
+    [width] => 133
+    [folder] => /uploads/20a46b5ba19c33c071924be737c13a3c/
+    [dir] => uploads/20a46b5ba19c33c071924be737c13a3c
+    [Upload] => Submit Query
+)
+variation dir:cropResize_133x99
+variation path:/home/arkon108/www/resizer.web/uploads/20a46b5ba19c33c071924be737c13a3c/cropResize_133x99
+method cropResize width: 133 height: 99
+Array
+(
+    [Filename] => 292600main_ISS018E009292_full.jpg
+    [height] => 99
+    [fileext] => *.gif;*.jpg;*.jpeg;*.png;*.GIF;*.JPG;*.JPEG;*.PNG
+    [resizeType] => cropResize
+    [width] => 133
+    [folder] => /uploads/20a46b5ba19c33c071924be737c13a3c/
+    [dir] => uploads/20a46b5ba19c33c071924be737c13a3c
+    [Upload] => Submit Query
+)
+variation dir:cropResize_133x99
+variation path:/home/arkon108/www/resizer.web/uploads/20a46b5ba19c33c071924be737c13a3c/cropResize_133x99
+method cropResize width: 133 height: 99
+Array
+(
+    [Filename] => 0318007.23.jpg
+    [height] => 99
+    [fileext] => *.gif;*.jpg;*.jpeg;*.png;*.GIF;*.JPG;*.JPEG;*.PNG
+    [resizeType] => cropResize
+    [width] => 133
+    [folder] => /uploads/20a46b5ba19c33c071924be737c13a3c/
+    [dir] => uploads/20a46b5ba19c33c071924be737c13a3c
+    [Upload] => Submit Query
+)
+variation dir:cropResize_133x99
+variation path:/home/arkon108/www/resizer.web/uploads/20a46b5ba19c33c071924be737c13a3c/cropResize_133x99
+method cropResize width: 133 height: 99
+bd:uploads/20a46b5ba19c33c071924be737c13a3c

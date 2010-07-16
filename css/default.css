@@ -7,19 +7,15 @@ h1, h2, h3, h4, h5, h6 { font-family: "Lucida Grande", Verdana, sans-serif; }
 h1 { font-size: 3em; margin: .5em 0 .2em; }
 h2 { font-size: 2em; margin: .5em 0 .2em; }
 p { font-family: Arial, Helvetica, sans-serif; }
-p.intro { font-size: .8em; line-height: 1.2em; padding: 1em 2em; margin: 0 0 .5em 0; }
+#header p { font-size: .8em; line-height: 1.2em; padding: 1em 2em; margin: 0 0 .5em 0; }
 
 .tabs p { font-size: .7em; margin: .5em 0; }
 #step-2 p { font-size: .8em; padding: 1em 2em 0 2em; } 
 hr { margin: 1em 0; }
 
 #upload-wrapper  { padding: 1em 2em; }
-#resize-now { margin: 1em 2em; }
-
 #resize-dialog { display: none; }
 
-#resize-progress { height: 1em; }
-#resize-dialog .waitforit, #resize-dialog .done { padding: 1em 0 2em; }
-.done  {display: none;}
+#download-zip, #refresh { margin: 1em 2em; }
 
 #step-2 { display: none; }
