@@ -19,3 +19,5 @@ hr { margin: 1em 0; }
 #download-zip, #refresh { margin: 1em 2em; }
 
 #step-2 { display: none; }
+
+.input-text-short { width: 80px }
