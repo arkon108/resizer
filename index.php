@@ -11,7 +11,7 @@ $sid = session_id();
 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/dark-hive/jquery-ui.css" type="text/css" media="all" />
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all" />
 <link rel="stylesheet" href="js/jquery.uploadify-v2.1.0/uploadify.css" type="text/css" media="all" />
-<link rel="stylesheet" href="css/default.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/default.css?v=2" type="text/css" media="all" />
 </head>
 <body id="index" class="home">
 
@@ -96,6 +96,6 @@ $sid = session_id();
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/jquery.uploadify-v2.1.0/swfobject.js"></script>
 <script type="text/javascript" src="js/jquery.uploadify-v2.1.0/jquery.uploadify.v2.1.0.min.js"></script>
-<script type="text/javascript" src="js/default.js"></script>
+<script type="text/javascript" src="js/default.js?v=3"></script>
 </body>
 </html>
